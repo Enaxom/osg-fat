@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SYSTEME>
+  <IDMACHINE>1</IDMACHINE>
+  <OSGRIM>CHRU</OSGRIM>
+  <GESTION>CHRU</GESTION>
+  <FORMATION>CHRU</FORMATION>
+  <Mode>2</Mode>
+  <Uid>9is1WG</Uid>
+  <Pwd>GW1si9</Pwd>
+ 
+  <BIOVEIN>OFF</BIOVEIN>
+  <BIOVEINADMIN>ON</BIOVEINADMIN>
+
+  <NomSkin>Liquid Sky</NomSkin>
+
+  <OSGBridge>OFF</OSGBridge>
+
+  <TimeoutLecture>300</TimeoutLecture>
+
+  <Rondier>OFF</Rondier>
+  <XRondier></XRondier>
+  <PathRondier></PathRondier>
+  <RONDIER_DEBUT></RONDIER_DEBUT>
+  <RONDIER_FIN></RONDIER_FIN>
+  
+  <PBCONNECTBDD>Problème dans la création de la chaine de connexion !</PBCONNECTBDD>
+  <NOCONNECTBDD>Impossible d'établir une connexion à la base !</NOCONNECTBDD>
+
+  <DocRtf>init.rtf</DocRtf>
+  <DocCrise></DocCrise>
+
+  <CRISE></CRISE>
+  <PATH>T:\INCENDIE\</PATH>
+
+  <MAIL_EXP></MAIL_EXP>
+  <NOM_EXP></NOM_EXP>
+  <SMTP></SMTP>
+
+  <IsTousRappel>1</IsTousRappel>
+
+  <ISTRAKA>OFF</ISTRAKA>
+  <TRAKA_RAPPEL>OFF</TRAKA_RAPPEL>
+	<NomBDTraka></NomBDTraka>
+	<Login></Login>
+	<MotPasse></MotPasse>
+	<ListeSysteme></ListeSysteme>
+	<IsMDB>0</IsMDB>
+
+</SYSTEME>

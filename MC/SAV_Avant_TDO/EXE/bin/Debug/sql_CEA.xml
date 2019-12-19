@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SYSTEME>
+  <IDMACHINE>1</IDMACHINE>
+  <OSGRIM>CEA_SQL</OSGRIM>
+  <GESTION>CEA_SQL</GESTION>
+  <FORMATION>CEA_SQL</FORMATION>
+  <Mode>2</Mode>
+  <Uid>9is1WG</Uid>
+  <Pwd>GW1si9</Pwd>
+ 
+  <BIOVEIN>OFF</BIOVEIN>
+  <BIOVEINADMIN>ON</BIOVEINADMIN>
+
+  <NomSkin>Liquid Sky</NomSkin>
+
+  <OSGBridge>OFF</OSGBridge>
+
+ <TimeoutLecture>300</TimeoutLecture>
+
+  <Rondier>OFF</Rondier>
+  <XRondier></XRondier>
+  <PathRondier></PathRondier>
+
+  <PBCONNECTBDD>Problème dans la création de la chaine de connexion !</PBCONNECTBDD>
+  <NOCONNECTBDD>Impossible d'établir une connexion à la base !</NOCONNECTBDD>
+
+  <DocRtf>init.rtf</DocRtf>
+  <DocCrise></DocCrise>
+
+  <CRISE></CRISE>
+  <PATH>C:\OSGRIM_V11_ADPA\FICHES\</PATH>
+  <PATHPJ>C:\OSGRIM_V11_ADPA\ChemPJ\</PATHPJ>
+
+  <MAIL_EXP>Philippe.chelle@free.fr</MAIL_EXP>
+  <NOM_EXP>OSGRIM-Service Informatique</NOM_EXP>
+  <SMTP>smtp.sfrbusinessteam.fr</SMTP>
+
+  <IsTousRappel>1</IsTousRappel>
+
+  <ISTRAKA>OFF</ISTRAKA>
+  <TRAKA_RAPPEL>OFF</TRAKA_RAPPEL>
+	<NomBDTraka></NomBDTraka>
+	<Login></Login>
+	<MotPasse></MotPasse>
+	<ListeSysteme></ListeSysteme>
+	<IsMDB>0</IsMDB>
+
+</SYSTEME>

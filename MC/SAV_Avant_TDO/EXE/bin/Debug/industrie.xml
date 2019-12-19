@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SYSTEME>
+  <IDMACHINE>1</IDMACHINE>
+  <OSGRIM>V11_INDUSTRIE</OSGRIM>
+  <GESTION>V11_INDUSTRIE</GESTION>
+  <FORMATION>V11_INDUSTRIE</FORMATION>
+  <Mode>3</Mode>
+  <Uid>9is1WG</Uid>
+  <Pwd>GW1si9</Pwd>
+ 
+  <BIOVEIN>OFF</BIOVEIN>
+  <BIOVEINADMIN>OFF</BIOVEINADMIN>
+
+  <NomSkin>Liquid Sky</NomSkin>
+
+  <OSGBridge>OFF</OSGBridge>
+
+  <TimeoutLecture>300</TimeoutLecture>
+
+  <Rondier>ON</Rondier>
+  <XRondier>http://www.mws.fr/</XRondier>
+  <PathRondier>C:\OSGRIM_V11_DEMO\mws</PathRondier>
+  <NATOPE>100</NATOPE>
+  
+  <PBCONNECTBDD>Problème dans la création de la chaine de connexion !</PBCONNECTBDD>
+  <NOCONNECTBDD>Impossible d'établir une connexion à la base !</NOCONNECTBDD>
+
+  <DocRtf>init.rtf</DocRtf>
+  <DocCrise></DocCrise>
+
+  <CRISE></CRISE>
+  <PATH>C:\OSGRIM_V11_DEMO\FichesINDUSTRIE\INDUSTRIE\</PATH>
+  <PATHPJ>C:\OSGRIM_V11_DEMO\FichesINDUSTRIE\ChemPJ\</PATHPJ>
+
+  <MAIL_EXP>contact@osgrim.fr</MAIL_EXP>
+  <NOM_EXP>OSGRIM</NOM_EXP>
+  <SMTP>smtp.sfrbusinessteam.fr</SMTP>
+
+  <IsTousRappel>1</IsTousRappel>
+
+  <ISTRAKA>OFF</ISTRAKA>
+  <TRAKA_RAPPEL>OFF</TRAKA_RAPPEL>
+	<NomBDTraka></NomBDTraka>
+	<Login></Login>
+	<MotPasse></MotPasse>
+	<ListeSysteme></ListeSysteme>
+	<IsMDB>0</IsMDB>
+
+</SYSTEME>

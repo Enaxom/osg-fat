@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{C6B36C55-B766-4397-9A97-452399ADBC0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MC</RootNamespace>
+    <AssemblyName>MC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Empty</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Feuilles\frmTablette.Designer.vb">
+      <DependentUpon>frmTablette.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmTablette.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frmRechercheASar.Designer.vb">
+      <DependentUpon>frmRechercheASar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmRechercheASar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frmRechercheADiv.Designer.vb">
+      <DependentUpon>frmRechercheADiv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmRechercheADiv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frmLVP.Designer.vb">
+      <DependentUpon>frmLVP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmLVP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frmAffHisto.Designer.vb">
+      <DependentUpon>frmAffHisto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmAffHisto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frmEcran.Designer.vb">
+      <DependentUpon>frmEcran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmEcran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frmListeDispos.Designer.vb">
+      <DependentUpon>frmListeDispos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmListeDispos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frmRechercheA.Designer.vb">
+      <DependentUpon>frmRechercheA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frmRechercheA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feuilles\frm_Doc.Designer.vb">
+      <DependentUpon>frm_Doc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feuilles\frm_Doc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module de classe\utilisateur.vb" />
+    <Compile Include="Module de classe\Alerte.vb" />
+    <Compile Include="Module de classe\Data_Set.vb" />
+    <Compile Include="Module de classe\grid_row.vb" />
+    <Compile Include="Module de classe\Init_MC.vb" />
+    <Compile Include="Modules Generiques\comXML.vb" />
+    <Compile Include="Modules Generiques\connect_ADODB.vb" />
+    <Compile Include="Modules Generiques\Message.vb" />
+    <Compile Include="Modules Generiques\Messages.vb" />
+    <Compile Include="Modules Generiques\OLSDATE.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BioVein">
+      <HintPath>..\..\REFERENCE\BioVein.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v10.2.Core, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v10.2.Win, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v10.2, Version=10.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DIA, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSLIA\DIA\DIA\bin\Debug\DIA.dll</HintPath>
+    </Reference>
+    <Reference Include="DIT">
+      <HintPath>..\..\DIT\DIT\bin\Debug\DIT.dll</HintPath>
+    </Reference>
+    <Reference Include="doc, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Admin\documentation\doc\bin\Debug\doc.dll</HintPath>
+    </Reference>
+    <Reference Include="gestionReleve, Version=11.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\gestionReleve\gestionReleve\bin\Debug\gestionReleve.dll</HintPath>
+    </Reference>
+    <Reference Include="HetC, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HetC\HetC\bin\Debug\HetC.dll</HintPath>
+    </Reference>
+    <Reference Include="MvtDiv, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MvtDiv\MvtDiv\bin\Debug\MvtDiv.dll</HintPath>
+    </Reference>
+    <Reference Include="MvtMat, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MvtMat\MvtMat\bin\Debug\MvtMat.dll</HintPath>
+    </Reference>
+    <Reference Include="MvtPers, Version=12.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MvtPers\MvtPers\bin\Debug\MvtPers.dll</HintPath>
+    </Reference>
+    <Reference Include="OpeDanger, Version=13.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SAR\OpeDanger\bin\Debug\OpeDanger.dll</HintPath>
+    </Reference>
+    <Reference Include="OpeMaintenance, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\OpeMaintenance\OpeMaintenance\bin\Debug\OpeMaintenance.dll</HintPath>
+    </Reference>
+    <Reference Include="OSGTraka32, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\OSGTraka32\OSGTraka32\bin\Debug\OSGTraka32.dll</HintPath>
+    </Reference>
+    <Reference Include="Rappel, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Rappel\Rappel\bin\Debug\Rappel.dll</HintPath>
+    </Reference>
+    <Reference Include="Rappel_HetC">
+      <HintPath>..\..\Rappel_HetC\Rappel_HetC\bin\Debug\Rappel_HetC.dll</HintPath>
+    </Reference>
+    <Reference Include="Rappel_traka, Version=12.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Rappel_TRAKA\Rappel_traka\bin\Debug\Rappel_traka.dll</HintPath>
+    </Reference>
+    <Reference Include="Rapport_Formation">
+      <HintPath>..\..\Rapport de Formation\Rapport de Formation\bin\Debug\Rapport_Formation.dll</HintPath>
+    </Reference>
+    <Reference Include="rondes, Version=11.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Rondes\rondes\rondes\bin\Debug\rondes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisuBrouillon">
+      <HintPath>..\..\VisuBrouillon\VisuBrouillon\bin\Release\VisuBrouillon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Feuilles\frmTablette.resx">
+      <DependentUpon>frmTablette.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frmRechercheASar.resx">
+      <DependentUpon>frmRechercheASar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frmRechercheADiv.resx">
+      <DependentUpon>frmRechercheADiv.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frmLVP.resx">
+      <DependentUpon>frmLVP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frmAffHisto.resx">
+      <DependentUpon>frmAffHisto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frmEcran.resx">
+      <DependentUpon>frmEcran.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frmListeDispos.resx">
+      <DependentUpon>frmListeDispos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frmRechercheA.resx">
+      <DependentUpon>frmRechercheA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feuilles\frm_Doc.resx">
+      <DependentUpon>frm_Doc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biffage 16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone-croix-suppr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Intervention\Intervention\Intervention.vbproj">
+      <Project>{4AF10817-85D7-4817-AB27-EB9C08E607C5}</Project>
+      <Name>Intervention</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SSLIA\LVP\LVP\LVP.vbproj">
+      <Project>{19847CE6-A5BE-4193-BABE-D2ACA86F0CA7}</Project>
+      <Name>LVP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smileys1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smileys2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soleil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soleilnuageux.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rappel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\materiel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preventive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intervention.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\releve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ronde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sitatuation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personne1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dispo_pers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brouillon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brouillon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brouillon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AccessibilityCplAdminLib">
+      <Guid>{714DD4F6-7676-4BDE-925A-C2FEC2073F36}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-tablet.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
