@@ -398,6 +398,9 @@ Public Class frmEcran
                     btnAero.Visible = False
                 End If
 
+                btnExportImportData.Left = position
+                position = position + 70
+
             End If
 
             LblDate.Text = Date.Now.ToShortDateString

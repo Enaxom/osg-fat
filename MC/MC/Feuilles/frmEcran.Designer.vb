@@ -116,6 +116,7 @@ Partial Class frmEcran
         Me.CLN_ANNULER_BR = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.Picture_Histo = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
         Me.PanelControl3 = New DevExpress.XtraEditors.PanelControl()
+        Me.btnExportImportData = New DevExpress.XtraEditors.SimpleButton()
         Me.btnSituation = New DevExpress.XtraEditors.SimpleButton()
         Me.btnAero = New DevExpress.XtraEditors.SimpleButton()
         Me.btnDit = New DevExpress.XtraEditors.SimpleButton()
@@ -129,7 +130,6 @@ Partial Class frmEcran
         Me.btnMvtPersonne = New DevExpress.XtraEditors.SimpleButton()
         Me.btnRappel = New DevExpress.XtraEditors.SimpleButton()
         Me.lblMessLecture = New DevExpress.XtraEditors.LabelControl()
-        Me.btnExportImportData = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.GrpStationnaire, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GrpStationnaire.SuspendLayout()
         CType(Me.TxtPriseService.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1142,6 +1142,7 @@ Partial Class frmEcran
         'PanelControl3
         '
         Me.PanelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.PanelControl3.Controls.Add(Me.btnExportImportData)
         Me.PanelControl3.Controls.Add(Me.btnSituation)
         Me.PanelControl3.Controls.Add(Me.btnAero)
         Me.PanelControl3.Controls.Add(Me.btnDit)
@@ -1158,6 +1159,17 @@ Partial Class frmEcran
         Me.PanelControl3.Name = "PanelControl3"
         Me.PanelControl3.Size = New System.Drawing.Size(1007, 62)
         Me.PanelControl3.TabIndex = 38
+        '
+        'btnExportImportData
+        '
+        Me.btnExportImportData.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExportImportData.Appearance.Options.UseFont = True
+        Me.btnExportImportData.Image = Global.MC.My.Resources.Resources.icon_tablet
+        Me.btnExportImportData.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.btnExportImportData.Location = New System.Drawing.Point(827, 4)
+        Me.btnExportImportData.Name = "btnExportImportData"
+        Me.btnExportImportData.Size = New System.Drawing.Size(53, 53)
+        Me.btnExportImportData.TabIndex = 23
         '
         'btnSituation
         '
@@ -1290,16 +1302,6 @@ Partial Class frmEcran
         Me.lblMessLecture.Size = New System.Drawing.Size(895, 16)
         Me.lblMessLecture.TabIndex = 20
         '
-        'btnExportImportData
-        '
-        Me.btnExportImportData.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExportImportData.Appearance.Options.UseFont = True
-        Me.btnExportImportData.Image = Global.MC.My.Resources.Resources.icon_tablet
-        Me.btnExportImportData.Location = New System.Drawing.Point(323, 673)
-        Me.btnExportImportData.Name = "btnExportImportData"
-        Me.btnExportImportData.Size = New System.Drawing.Size(53, 53)
-        Me.btnExportImportData.TabIndex = 23
-        '
         'frmEcran
         '
         Me.Appearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -1307,7 +1309,6 @@ Partial Class frmEcran
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1022, 734)
-        Me.Controls.Add(Me.btnExportImportData)
         Me.Controls.Add(Me.lblMessLecture)
         Me.Controls.Add(Me.PanelControl3)
         Me.Controls.Add(Me.GrpNewEvt)

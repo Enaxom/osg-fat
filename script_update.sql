@@ -12,3 +12,11 @@ insert into langue values('GENERIQUE','MESS_IMPORT_ERR','Il semble qu''il n''y a
 insert into langue values('GENERIQUE','MESS_EXPORT_ERR','Impossible d''exporter les données. Assurez-vous que l''appareil soit bien branché en USB et que le fichier de configuration d''Osgrim soit correct.',0);
 -- Libellé titre fenêtre de gestion des données
 insert into langue values('MC', 'TITRE_FRMANDROID', 'Gestion des données', 0);
+-- Libellé heure de début de l'action pour version mobile
+insert into langue values('RAP_ADMIN','LBL_HEUREDEBUT','Heure de début de l''action',0);
+-- Libellé date de début de l'action pour version mobile
+insert into langue values('RAP_ADMIN','LBL_DATEDEB','Date de début de l''action',0);
+-- Libellé heure de fin de l'action pour version mobile
+insert into langue values('RAP_ADMIN','LBL_HEUREFIN','Heure de fin de l''action',0);
+-- Libellé date de fin de l'action pour version mobile
+insert into langue values('RAP_ADMIN','LBL_DATEFN','Date de fin de l''action',0);

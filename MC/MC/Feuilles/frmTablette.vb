@@ -31,7 +31,7 @@ Public Class frmTablette
                 btnFermer.Text = rs.Fields("Libelle").Value
                 rs.Close()
 
-                rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM LANGUE WHERE IdObjet='MC' AND IdLangue='TITRE_FRMDISPOS'")
+                rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM LANGUE WHERE IdObjet='MC' AND IdLangue='TITRE_FRMANDROID'")
                 Me.Text = rs.Fields("Libelle").Value
                 rs.Close()
 
@@ -63,15 +63,14 @@ Public Class frmTablette
     ' Import data
     Private Sub SimpleButton2_Click(sender As System.Object, e As System.EventArgs) Handles btn_import.Click
         Dim path As String = ClassParent.ClassParent.pathAndroid
-        ' Dim stream As Stream = File.OpenRead("C:\Temp\data_export.txt")
-        If Not System.IO.File.Exists(path & "\data_export.txt") Then
+        If Not System.IO.File.Exists(path & "data_export.txt") Then
             ' Error message when importation fails
             DevExpress.XtraEditors.XtraMessageBox.Show(ClassParent.ClassParent.ListeMessages("MESS_IMPORT_ERR").Libelle, Application.ProductName, MessageBoxButtons.OK)
             Exit Sub
         End If
 
         'Open file located in xml path android
-        Dim stream As Stream = File.OpenRead(path & "\data_export.txt")
+        Dim stream As Stream = File.OpenRead(path & "data_export.txt")
         Dim reader As New StreamReader(stream)
         Dim jsonData As String = reader.ReadToEnd
         reader.Close()
@@ -172,7 +171,7 @@ Public Class frmTablette
     ' Export data
     Private Sub SimpleButton1_Click(sender As System.Object, e As System.EventArgs) Handles btn_export.Click
         ' First file : label.json
-        Dim labels(27) As String
+        Dim labels(31) As String
         Dim rs As ADODB.Recordset
         Dim path As String = ClassParent.ClassParent.pathAndroid
 
@@ -284,6 +283,22 @@ Public Class frmTablette
             rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM LANGUE WHERE IdObjet='GENERIQUE' AND IdLangue='BTN_ANNULER'")
             labels(27) = rs.Fields("Libelle").Value
             rs.Close()
+
+            rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM LANGUE WHERE IdObjet='RAP_ADMIN' AND IdLangue='LBL_DATEDEB'")
+            labels(28) = rs.Fields("Libelle").Value
+            rs.Close()
+
+            rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM LANGUE WHERE IdObjet='RAP_ADMIN' AND IdLangue='LBL_DATEFN'")
+            labels(29) = rs.Fields("Libelle").Value
+            rs.Close()
+
+            rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM LANGUE WHERE IdObjet='RAP_ADMIN' AND IdLangue='LBL_HEUREDEBUT'")
+            labels(30) = rs.Fields("Libelle").Value
+            rs.Close()
+
+            rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM LANGUE WHERE IdObjet='RAP_ADMIN' AND IdLangue='LBL_HEUREFIN'")
+            labels(31) = rs.Fields("Libelle").Value
+            rs.Close()
         End If
 
         ' Object to serialize to Json object
@@ -315,16 +330,19 @@ Public Class frmTablette
         label.save = labels(25)
         label.draft = labels(26)
         label.cancel = labels(27)
+        label.startDate2 = labels(28)
+        label.endDate2 = labels(29)
+        label.startTime = labels(30)
+        label.endTime = labels(31)
 
         Dim objSerializer As New JavaScriptSerializer()
         Dim labelJson As String
         labelJson = objSerializer.Serialize(label)
 
-        ' Save of the file
-        ' File.WriteAllText("C:\Temp\label.json", labelJson)
         ' Save file to path in xml
         Try
-            File.WriteAllText(path & "\label.json", labelJson)
+            ' System.IO.Directory.CreateDirectory(path)
+            File.WriteAllText(path & "label.json", labelJson)
         Catch ex As Exception
             DevExpress.XtraEditors.XtraMessageBox.Show(ClassParent.ClassParent.ListeMessages("MESS_EXPORT_ERR").Libelle, Application.ProductName, MessageBoxButtons.OK)
             Exit Sub
@@ -554,11 +572,11 @@ Public Class frmTablette
 
         ' Fill materials values
         If ClassParent.ClassParent.connect_ADO.ADODB_connection(1) Then
-            rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM MATERIELS WHERE Etat=1 order by Position")
+            rs = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT * FROM MATERIELSGM WHERE Etat=1 order by Position")
 
             While Not rs.EOF
-                Dim idMaterial As Integer = rs.Fields("IDMateriel").Value
-                Dim nameMaterial As String = rs.Fields("NomMateriel").Value
+                Dim idMaterial As Integer = rs.Fields("IDMaterielGM").Value
+                Dim nameMaterial As String = rs.Fields("NomMaterielGM").Value
 
                 Dim rs2 As ADODB.Recordset = ClassParent.ClassParent.connect_ADO.ADODB_create_recordset(1, "SELECT IDIncident FROM INCIDENTSGM where IDMaterielGM=" & idMaterial & " and etat=1 order by Position")
                 Dim incidents(rs2.RecordCount - 1) As Integer
@@ -657,10 +675,8 @@ Public Class frmTablette
         Dim dataJson As String
         dataJson = objSerializer.Serialize(data)
 
-        ' Save of the file
-        ' File.WriteAllText("C:\Temp\data_transfer.json", dataJson)
         ' Save file to path in xml
-        File.WriteAllText(path & "\data_transfer.json", dataJson)
+        File.WriteAllText(path & "data_transfer.json", dataJson)
 
         ' Exportation confirmation
         DevExpress.XtraEditors.XtraMessageBox.Show(ClassParent.ClassParent.ListeMessages("MESS_EXPORT_SUCCESS").Libelle, Application.ProductName, MessageBoxButtons.OK)
@@ -730,6 +746,10 @@ Public Class Label
     Public Property code As String
     Public Property startDate As String
     Public Property endDate As String
+    Public Property startDate2 As String
+    Public Property endDate2 As String
+    Public Property startTime As String
+    Public Property endTime As String
     Public Property services As String
     Public Property teams As String
     Public Property participant As String
