@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<OSGRIM>
-  <SQLINI>sql.xml</SQLINI>
-  <MESSAGE>
-    <NOCFGBDD>Aucun fichier de configuration BDD !</NOCFGBDD>
-  </MESSAGE>
-<NomSkin>Liquid Sky</NomSkin>
-</OSGRIM>
-
